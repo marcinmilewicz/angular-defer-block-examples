@@ -1,0 +1,6 @@
+<button type="button" (click)="increment()">Increment</button> Counter:
+{{ counter() }}
+
+@defer (when counter() > 4) {
+  <app-heavy-component />
+}

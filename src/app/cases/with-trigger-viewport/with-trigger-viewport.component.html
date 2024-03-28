@@ -1,0 +1,7 @@
+<p>Scroll down</p>
+<div class="empty-placholder"></div>
+<div #deferPlacholder></div>
+
+@defer (on viewport(deferPlacholder)) {
+  <app-heavy-component />
+}

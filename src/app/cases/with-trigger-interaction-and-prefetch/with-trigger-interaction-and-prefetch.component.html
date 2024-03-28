@@ -1,0 +1,8 @@
+<div class="hover-placeholder" #hover>or hover me!</div>
+<div>
+  <button type="button" #button>Click</button>
+</div>
+
+@defer (on interaction(button); on hover(hover); prefetch on idle) {
+  <app-heavy-component />
+}
